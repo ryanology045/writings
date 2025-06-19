@@ -10,7 +10,7 @@ tags = []
 
 ## Staking Rewards in Proof of Stake are Economically Flawed
 
-![staking-defi-1](/writings/images/mirror-staking-defi-1/staking-defi-1-1.png)
+![staking-defi-1](/images/mirror-staking-defi-1/staking-defi-1-1.png)
 
 ## Economic analysis of Proof of Stake
 Proof of Stake (PoS) is increasingly becoming popular as the core consensus layer for blockchains. Multiple blockchain platforms like Ethereum, EOS, Cosmos, and Tezos has already adopted PoS or has plans to do so in the near future. For a long time, a lot of consideration has been done on the security aspects of PoS. However, not much thought has gone into considering the potential economic effects on the ecosystem and the possible negative outcomes of them. In this article, we line up three potential problems that could arise from a PoS based economic system.
@@ -19,7 +19,7 @@ Proof of Stake (PoS) is increasingly becoming popular as the core consensus laye
 > 
 > ### The Introduction of a Central Interest Rate
 
-![staking-defi-2](/writings/images/mirror-staking-defi-1/staking-defi-1-2.png)
+![staking-defi-2](/images/mirror-staking-defi-1/staking-defi-1-2.png)
 
 Staking and DeFi products compete with each other
 

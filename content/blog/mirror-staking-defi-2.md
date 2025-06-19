@@ -10,7 +10,7 @@ tags = []
 
 ## On Network Security
 
-![staking-defi-2](/images/mirror-staking-defi-2/staking-defi-2-1.png)
+![staking-defi-2](/writings/images/mirror-staking-defi-2/staking-defi-2-1.png)
 
 ## The Economics of Proof of Stake Security
 In the previous article, we explained how proof-of-stake can negatively affect a blockchain ecosystem with its economic incentives.

@@ -10,7 +10,7 @@ tags = []
 
 ## The Potential Negative Effects of PoS & Market Side Considerations
 
-![staking-defi-3](/images/mirror-staking-defi-3/staking-defi-3-1.png)
+![staking-defi-3](/writings/images/mirror-staking-defi-3/staking-defi-3-1.png)
 
 ## Proof-of-Stake: The Market Side Concerns
 Previously, we have looked into the potential economical and security side problems of PoS. Unfortunately, potential problems do not end here, and in this article we will be considering the negative effects of PoS from the market side perspective. This article will be a simplified analysis of the possible market side problems that PoS might introduce.

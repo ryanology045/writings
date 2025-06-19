@@ -6,7 +6,7 @@ weight = 1
 
 GM - I'm Ryan Park (@ryanology045), a washed peaked-early individual that's still working to shape the world for the better. 
 
-![image_whatever](/images/image_whatever.png)
+![image_whatever](/writings/images/image_whatever.png)
 
 **Here's a quick history of my life**
 

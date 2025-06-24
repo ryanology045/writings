@@ -7,8 +7,8 @@ theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
 title = "Premium Yebisu Beer, Born in 1890, Tokyo"
-author = "ryanology045"
-copyright = "Copyright © 2020, ryanology045."
+author = "Ryan Park (ryanology045)"
+copyright = "Copyright © 2020, Ryan Park (ryanology045)."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO

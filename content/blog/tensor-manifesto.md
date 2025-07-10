@@ -1,6 +1,6 @@
 +++
 title = "The Tensor Capitalism Manifesto: We Should Run Our Economies Like LLMs"
-date = "2025-07-05T00:00:00+00:00"
+date = "2025-07-10T00:00:00+00:00"
 tags = []
 +++
 

@@ -1,10 +1,8 @@
 +++
 title = "Digital Organoids - A New AI Paradigm"
-date = "2025-06-21T05:26:00+09:00"
+date = "2025-06-21T00:00:00+00:00"
 tags = []
 +++
-
-# This is still WIP-ish
 
 Airplanes were inspired by embracing biology, but progression was made by rejecting biology. Birds inspired the concept, abandoning flappers for fixed wings was when actual progress was made. Similarly, AI started from embracing the biological brain, but real progress was achieved when the artificial concept of backpropagation was introduced. 
 
@@ -132,11 +130,6 @@ When a new neuron is created, it also requires an algorithm to integrate itself 
 - Parental scaffolding - initially assign the new neuron's synapses with neurons that its parent (preexisting neuron to be helping out) is connected to, with slight variations
 - Exploratory scaffolding - additionally form weak synapses with randomly chosen neurons for novel pathways
 
-**External bridging**
-
-Methodologies TBD - will add later. 
-
-
 ## Making the design choices
 
 Implementing an in-silico organoid is now really just a mix-and-match of the above choices. 
@@ -180,4 +173,4 @@ With the lame, mainstream consensus thoughts out of the way, we can now briefly 
 - Inherent plasticity allows topological fluidity - two separate models can merge into one, a single model can seperate to two, etc. 
 - Inherent plasticity also allows total integration to other AI models (even with those that are not organoids!)
 
-The in-depth details of some of such exotic utilities however deserve their own separate posts, where one should expect TRUE NOVELTY (noone has thought of it before) and VERY IMPACTFUL (no - what you're thinking doesn't even compare with what's being thought of).
+The in-depth details of some of such exotic utilities however deserve their own separate posts, where one can check the other writings on Praxis. 

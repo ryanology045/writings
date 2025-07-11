@@ -227,9 +227,9 @@ Within the frame of PRA, this means that adopting PRA (or adopting any system of
 On a more practical note, those making use of PRA should be on a constant lookout for statements that appear compelling, but resist formal derivation. Upon such discoveries, one can either 1) flag them as potential leads for an Is-Rhizome expansion, or 2) mark them as undecidable and take on a pragmatic mindset for such. 
 
 &nbsp;
-### Turing’s Undecidability Theorem
+### Turing’s halting problem
 
-Turing's Halting Problem broadly shows that no universal algorithm can predict - in finite time - whether an arbitrary program will terminate. 
+Turing's halting problem broadly shows that no universal algorithm can predict - in finite time - whether an arbitrary program will terminate. 
 
 Applied to PRA, this states that there exist action plans whose outcomes are undecidable until enacted on - no amount of Arborescent thinking would yield a valid conclusion. 
 

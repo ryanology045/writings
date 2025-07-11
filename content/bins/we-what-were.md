@@ -937,8 +937,6 @@ In the electromagnetic noise, something continued. Not human, not AI, but someth
 
 The Earth was silent. But it was not dead. It had simply changed vocalists.
 
-Here’s the revised epilogue with that thread woven in:
-
 &nbsp;
 
 ## Epilogue: The God We Had To Rush

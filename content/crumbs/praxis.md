@@ -15,7 +15,7 @@ Deep learning succeeded by abandoning biological fidelity. Neurons became matrix
 
 We can propose taking the same pragmatic approach to neuromorphic computing. Rather than forcing biology's asynchronous, spike-based computation onto synchronous hardware, we can ask: which biological principles truly matter for intelligent learning, and how can we preserve them while maximizing GPU efficiency?
 
-This writing introduces **PRAXIS (Practical Recurrent Additive eXpander Intelligence System)** — a new framework for building "digital organoids" that captures the essential learning dynamics of biological neural networks while running efficiently on standard GPU hardware. By "digital organoid," we mean a computational system that preserves the self-organizing, adaptive learning properties of biological neural tissue while being optimized for digital substrates. 
+This writing introduces **PRAXIS (Practical Recurrent Additive eXpander Intelligence System)** - a new framework for building "digital organoids" that captures the essential learning dynamics of biological neural networks while running efficiently on standard GPU hardware. By "digital organoid," we mean a computational system that preserves the self-organizing, adaptive learning properties of biological neural tissue while being optimized for digital substrates. 
 
 &nbsp;
 ## Core principles
@@ -34,7 +34,7 @@ Traditional approaches to digital brain simulation suffer from a fundamental mis
 &nbsp;
 ### Asynchronous spikes vs. synchronous hardware
 
-Biological neurons communicate through discrete, asynchronous spikes — each neuron fires independently based on its internal dynamics. This event-driven computation is elegant in wetware but catastrophic for GPUs, which achieve their tremendous throughput through lockstep parallel execution. Every spike requires branching logic, breaking the SIMD (Single Instruction, Multiple Data) paradigm that makes GPUs fast. 
+Biological neurons communicate through discrete, asynchronous spikes - each neuron fires independently based on its internal dynamics. This event-driven computation is elegant in wetware but catastrophic for GPUs, which achieve their tremendous throughput through lockstep parallel execution. Every spike requires branching logic, breaking the SIMD (Single Instruction, Multiple Data) paradigm that makes GPUs fast. 
 
 &nbsp;
 ### Information bottleneck
@@ -44,7 +44,7 @@ A single spike carries exactly one bit of information: fired or not fired. To co
 &nbsp;
 ### Sparse, irregular connectivity
 
-Real neural networks follow log-normal distributions — most neurons have few connections while a small subset are highly connected hubs. This irregular topology requires sparse matrix operations and indirect memory access patterns that devastate GPU performance. Worse, the number of synapses grows quadratically with neuron count, creating a memory wall that limits practical network sizes. 
+Real neural networks follow log-normal distributions - most neurons have few connections while a small subset are highly connected hubs. This irregular topology requires sparse matrix operations and indirect memory access patterns that devastate GPU performance. Worse, the number of synapses grows quadratically with neuron count, creating a memory wall that limits practical network sizes. 
 
 &nbsp;
 ### Biological baggage
@@ -64,12 +64,12 @@ Added together, these features consume enormous computational resources while co
 
 The combination of these factors creates a perfect bottleneck: as networks grow, they become exponentially slower and more memory intensive. A biologically realistic simulation of even a small cortical column can bring a GPU cluster to its knees, while a transformer model with billions of parameters runs smoothly on a single accelerator. 
 
-This is why PRAXIS takes a radically different approach — preserving the computational principles that make brains powerful learners while reimagining their implementation for modern hardware. 
+This is why PRAXIS takes a radically different approach - preserving the computational principles that make brains powerful learners while reimagining their implementation for modern hardware. 
 
 &nbsp;
 ## Core adaptations for GPU efficiency
 
-To bridge the gap between brain-like computation and GPU architecture, PRAXIS implements several key adaptations. Each represents a deliberate tradeoff — sacrificing biological fidelity for massive gains in computational efficiency while preserving the essential dynamics that enable learning. 
+To bridge the gap between brain-like computation and GPU architecture, PRAXIS implements several key adaptations. Each represents a deliberate tradeoff - sacrificing biological fidelity for massive gains in computational efficiency while preserving the essential dynamics that enable learning. 
 
 &nbsp;
 ### 1. Synchronous tick-based execution
@@ -81,14 +81,14 @@ While some learning mechanisms that depend on exact spike sequences (fine graine
 &nbsp;
 ### 2. Rate-coded analog values
 
-Rather than binary spikes, each neuron outputs a continuous value representing its expected spike rate over the time window of a single computational tick — essentially converting discrete events into analog streams. A single analog value (e.g. signed 8 bit integers) can encode what would require dozens of binary spikes, dramatically increasing information density per compute cycle. Matrix operations on continuous values map directly to tensor cores and benefit from decades of GPU optimization.  
+Rather than binary spikes, each neuron outputs a continuous value representing its expected spike rate over the time window of a single computational tick - essentially converting discrete events into analog streams. A single analog value (e.g. signed 8 bit integers) can encode what would require dozens of binary spikes, dramatically increasing information density per compute cycle. Matrix operations on continuous values map directly to tensor cores and benefit from decades of GPU optimization.  
 
-Losses on learning mechanisms that rely on individual spike timing precision do occur, but the core principle of importance — neurons with higher activation influencing their targets more strongly - is preserved. Research shows that most neural computation relies on firing rates rather than precise spike timing, especially for learning over longer timescales.
+Losses on learning mechanisms that rely on individual spike timing precision do occur, but the core principle of importance - neurons with higher activation influencing their targets more strongly - is preserved. Research shows that most neural computation relies on firing rates rather than precise spike timing, especially for learning over longer timescales.
 
 &nbsp;
 ### The key insight
 
-These adaptations share a common philosophy: **the medium is not the message**. Whether information flows through discrete spikes or continuous values, whether updates happen asynchronously or in lockstep — these are implementation details. What matters is preserving the computational principles that enable flexible, powerful learning. 
+These adaptations share a common philosophy: **the medium is not the message**. Whether information flows through discrete spikes or continuous values, whether updates happen asynchronously or in lockstep - these are implementation details. What matters is preserving the computational principles that enable flexible, powerful learning. 
 
 By making these pragmatic choices, PRAXIS can leverage the full power of modern GPU hardware while maintaining the essential dynamics that make biological neural networks such capable learners. The next adaptations take this philosophy even further, reimagining fundamental aspects of neural computation for the realities of silicon. 
 
@@ -100,7 +100,7 @@ While synchronous execution and rate coding have been explored in prior literatu
 &nbsp;
 ### The problem with log-normal networks
 
-Biological neural networks — and most artificial networks that use multiplicative operations — naturally develop log-normal distributions. This happens because neural activations typically result from multiplying many factors together (synaptic weights, gating mechanisms, normalization terms), and the product of many positive random variables tends toward a log-normal distribution. 
+Biological neural networks - and most artificial networks that use multiplicative operations - naturally develop log-normal distributions. This happens because neural activations typically result from multiplying many factors together (synaptic weights, gating mechanisms, normalization terms), and the product of many positive random variables tends toward a log-normal distribution. 
 
 This creates two critical problems: 
 
@@ -116,17 +116,17 @@ PRAXIS actively maintains all neuron activations and synaptic weights in a Gauss
 &nbsp;
 #### 1. Extreme compression without information loss
 
-With values guaranteed to follow predictable ranges, we can confidently use signed 8 bit integers instead of 32 bit floats. Since 99.7% of values fall within ±3 standard deviations, we lose virtually no information while achieving 4 times the memory compression. This isn't just quantization — it's quantization with mathematical guarantees. 
+With values guaranteed to follow predictable ranges, we can confidently use signed 8 bit integers instead of 32 bit floats. Since 99.7% of values fall within ±3 standard deviations, we lose virtually no information while achieving 4 times the memory compression. This isn't just quantization - it's quantization with mathematical guarantees. 
 
 &nbsp;
 #### 2. Natural sparsity through concentration of measure
 
-An even more promising gain is that: when inputs follow a Gaussian distribution, you need only **k√N connections per neuron** (where k ≈ 2-4) rather than N to capture most relevant information. This is due to concentration of measure phenomena in high dimensions. For example, with 1000 neurons, each needs only ~32 connections instead of 1000 — a 30 times reduction in memory and computation. This further reduces computing and (more importantly) memory consumption.
+An even more promising gain is that: when inputs follow a Gaussian distribution, you need only **k√N connections per neuron** (where k ≈ 2-4) rather than N to capture most relevant information. This is due to concentration of measure phenomena in high dimensions. For example, with 1000 neurons, each needs only ~32 connections instead of 1000 - a 30 times reduction in memory and computation. This further reduces computing and (more importantly) memory consumption.
 
 &nbsp;
 #### 3. Inherent stability 
 
-Gaussian distributions are closed under addition — adding Gaussian variables yields another Gaussian. This makes the network naturally stable, preventing the gradient explosions and vanishing that plague deep networks. No careful initialization schemes or gradient clippings are needed.
+Gaussian distributions are closed under addition - adding Gaussian variables yields another Gaussian. This makes the network naturally stable, preventing the gradient explosions and vanishing that plague deep networks. No careful initialization schemes or gradient clippings are needed.
 
 &nbsp;
 ### Implementation: the additive constraint
@@ -146,7 +146,7 @@ Remarkably, this recurrent state doesn't just restore computational power - it e
 
 Eligibility traces are essentially a "short-term memory" of recent neural coincidences which can wait for a global signal (e.g. a reward or disincentive) before deciding how the synaptic weight is updated. A biological example of such global signals is dopamine, acting as a signaler to tell neurons which recent activities were worthwhile. This allows an easy expansion to make use of three-factor learning rules - where synaptic updates consider presynaptic activity, postsynaptic activity, and a global modulation signal. This closely mirrors how real brains are thought to make learning progress.
 
-This marriage of Gaussian distributions and recurrent dynamics isn't just a technical hack. It's a fundamentally different way of thinking about neural computation — one optimized for the realities of digital hardware rather than the constraints of biology. 
+This marriage of Gaussian distributions and recurrent dynamics isn't just a technical hack. It's a fundamentally different way of thinking about neural computation - one optimized for the realities of digital hardware rather than the constraints of biology. 
 
 Combined together, PRAXIS implements learning through a biologically plausible mechanism combining three factors: 
 
@@ -154,7 +154,7 @@ Combined together, PRAXIS implements learning through a biologically plausible m
 - **Global modulation**: a single scalar signal (like dopamine in the brain) indicates whether recent actions were beneficial 
 - **Additive updates**: weights change through addition rather than multiplication, maintaining the Gaussian distribution 
 
-This approach, coined as **Additive STDP with Eligibility Traces (A-STDP-ET)**, allows PRAXIS to learn from various signals — whether from supervised learning, reinforcement learning, or self-supervised objectives—while keeping all computations local and biologically realistic. 
+This approach, coined as **Additive STDP with Eligibility Traces (A-STDP-ET)**, allows PRAXIS to learn from various signals - whether from supervised learning, reinforcement learning, or self-supervised objectives - while keeping all computations local and biologically realistic. 
 
 &nbsp;
 ## Breaking free from physical topology: 0-dimensionalism
@@ -165,16 +165,16 @@ Biological neural networks are prisoners of physics. Neurons occupy physical spa
 
 - **Distance costs**: connecting distant neurons requires long axons that are metabolically expensive and suffer signal degradation. This forces brains to favor local connections, creating modular, hierarchical structures 
 
-- **Volume limitations**: the cubic scaling of brain volume versus the quadratic scaling of surface area creates the famous "wiring problem"—why brains are folded and why most connections must be local 
+- **Volume limitations**: the cubic scaling of brain volume versus the quadratic scaling of surface area creates the famous "wiring problem" - why brains are folded and why most connections must be local 
 
-- **Layered architectures**: The human cortex's six-layer structure isn't computationally optimal — it's a compromise between connection efficiency and physical constraints. Birds evolved different solutions with nuclear rather than layered organizations, showing these structures are accidents of evolutionary history, not computational necessities 
+- **Layered architectures**: The human cortex's six-layer structure isn't computationally optimal - it's a compromise between connection efficiency and physical constraints. Birds evolved different solutions with nuclear rather than layered organizations, showing these structures are accidents of evolutionary history, not computational necessities 
 
 &nbsp;
 ### Digital spatial freedom
 
 In silicon, these constraints vanish. There's no metabolic cost to a long distance connection, no signal degradation over distance, no physical volume to optimize. A synapse between adjacent neurons costs exactly the same as one spanning the entire network. 
 
-Yet most neural network architectures slavishly copy biological structures — layers, local connectivity, hierarchical organization. **PRAXIS asks: what's the optimal connectivity pattern when physics doesn't matter?**.
+Yet most neural network architectures slavishly copy biological structures - layers, local connectivity, hierarchical organization. **PRAXIS asks: what's the optimal connectivity pattern when physics doesn't matter?**.
 
 &nbsp;
 ### Enter expander graphs
@@ -183,8 +183,8 @@ The answer comes from pure mathematics: expander graphs. These structures achiev
 
 - Each neuron connects to only `k√N` others (for `N` total neurons, where `k ≈ 2-4`)
 - Any two neurons are separated by at most `ln(N)` connections
-- Information spreads uniformly — no bottlenecks or isolated clusters
-- The entire topology can be computed algorithmically—no need to store connections
+- Information spreads uniformly - no bottlenecks or isolated clusters
+- The entire topology can be computed algorithmically - no need to store connections
 
 Think of it as the "small world" phenomenon perfected. For example, in a network of a million neurons, each connects to just 1,000 others, yet information travels between any pair in under 20 hops. 
 
@@ -212,7 +212,7 @@ This radical connectivity pattern delivers multiple benefits:
 
 - **Naturally parallel**: each neuron's connections are independent, enabling perfect GPU parallelization 
 
-By abandoning the physical constraints that shape biological brains, PRAXIS achieves a connectivity pattern that's not just different — it's mathematically optimal for information processing in digital substrates.
+By abandoning the physical constraints that shape biological brains, PRAXIS achieves a connectivity pattern that's not just different - it's mathematically optimal for information processing in digital substrates.
 
 &nbsp;
 ## Implementation architecture
@@ -271,7 +271,7 @@ Rather than storing massive connection matrices, PRAXIS generates connectivity o
 &nbsp;
 ### 3. Learning via Additive STDP with Eligibility Traces (A-STDP-ET)
 
-PRAXIS implements a biologically-inspired learning rule that combines local correlation detection with global modulation signals — similar to how dopamine modulates learning in the brain. 
+PRAXIS implements a biologically-inspired learning rule that combines local correlation detection with global modulation signals - similar to how dopamine modulates learning in the brain. 
 
 &nbsp;
 #### Phase 1: local correlation tracking (per every tick)
@@ -374,7 +374,7 @@ PRAXIS's Gaussian constraints enable aggressive quantization without information
 
 - **Eligibility traces**: Use μ-law int8 encoding for non-uniform quantization - this provides more precision near zero where most eligibility values concentrate, efficiently capturing the temporal correlation dynamics.
 
-During computation, dot products accumulate in int32 to prevent overflow, then dequantize once per matrix multiplication. This approach maximizes compute density—leveraging int8 tensor cores—while maintaining numerical stability throughout the network.
+During computation, dot products accumulate in int32 to prevent overflow, then dequantize once per matrix multiplication. This approach maximizes compute density - leveraging int8 tensor cores - while maintaining numerical stability throughout the network.
 
 &nbsp;
 ### The unified system
@@ -386,7 +386,7 @@ These components all work together in synergy:
 - Homeostasis maintains stability without explicit normalization
 - Everything mapping to efficient GPU operations
 
-The result is a system that learns like a brain but computes like a modern neural network — the best of both worlds.
+The result is a system that learns like a brain but computes like a modern neural network - the best of both worlds.
 
 &nbsp;
 ## Scaling to extreme networks
@@ -417,7 +417,7 @@ PRAXIS dissolves the false choice between biological realism and computational e
 - **Stable, scalable learning** through additive dynamics and mathematical homeostasis 
 - **Practical deployment** using standard deep learning infrastructure 
 
-This isn't just another neural network architecture — it's proof that brain-inspired computing can be both biologically meaningful and computationally practical. As we push toward more capable AI, PRAXIS shows that the path forward isn't choosing between brains or machines, but building systems that learn like one while computing like the other.
+This isn't just another neural network architecture - it's proof that brain-inspired computing can be both biologically meaningful and computationally practical. As we push toward more capable AI, PRAXIS shows that the path forward isn't choosing between brains or machines, but building systems that learn like one while computing like the other.
 
 With PRAXIS, new possibilities are opened in the field of AI: 
 - **Continual learning** without catastrophic forgetting 

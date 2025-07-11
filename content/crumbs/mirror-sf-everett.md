@@ -1,6 +1,6 @@
 +++
 title = "[Mirror] San Francisco Blockchain Week: A Truly DeFi-ning Moment"
-date = "2019-11-27T00:00:00+09:00"
+date = "2019-11-27T00:00:00+00:00"
 tags = []
 +++
 

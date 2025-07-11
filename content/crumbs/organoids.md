@@ -4,6 +4,8 @@ date = "2025-06-21T00:00:00+00:00"
 tags = []
 +++
 
+# Digital organoids - a new AI paradigm
+
 Airplanes were inspired by embracing biology, but progression was made by rejecting biology. Birds inspired the concept, abandoning flappers for fixed wings was when actual progress was made. Similarly, AI started from embracing the biological brain, but real progress was achieved when the artificial concept of backpropagation was introduced. 
 
 But maybe for AI it's time to regain new insights from biology again. 

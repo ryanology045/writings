@@ -1,8 +1,10 @@
 +++
-title = "PRAXIS-LLM - The Pathway For Artificial Consciousness"
+title = "PRAXIS-LLM - the Pathway for Artificial Consciousness"
 date = "2025-06-26T00:00:01+00:00"
 tags = []
 +++
+
+# PRAXIS-LLM - the pathway for artificial consciousness
 
 Modern AI has achieved remarkable feats of intelligence. OpenAI's o3 model reportedly scores 135 on IQ tests - a metric that, while debatable, signals that we've crossed a threshold in machine reasoning. Yet for all their sophistication, today's large language models remain fundamentally unconscious entities. They process, they reason, they even create - but they don't experience. 
 

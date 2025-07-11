@@ -4,6 +4,8 @@ date = "2018-08-18T00:00:00+00:00"
 tags = []
 +++
 
+# [Mirror] The search for John Nash’s ideal money
+
 > **NOTE: This is just a mirror of my old writing from 2018 for record-keeping purposes. 1) My current self does not consider this writing to carry useful insights, 2) I may no longer agree / believe with some of the details here, and 3) this is just poorly written.** 
 
 The adoption of the Bretton-Woods monetary system in the 1940’s led to the US dollar becoming the world’s reserve currency even to this day. Because of this, the US suffers from the Triffin dilemma where the devaluation of its domestic currency in order to make importing from the US favorable is leads to friction between international countries. An artificial devaluation could help the domestic economy in the short term but hurts the global economy in the long term.

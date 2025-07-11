@@ -4,6 +4,8 @@ date = "2018-09-04T00:00:00+00:00"
 tags = []
 +++
 
+# [Mirror] Blockchain macroeconomics: redesigning financial intermediaries
+
 > **NOTE: This is just a mirror of my old writing from 2018 for record-keeping purposes. 1) My current self does not consider this writing to carry useful insights, 2) I may no longer agree / believe with some of the details here, and 3) this is just poorly written.** 
 
 One of the most fundamental beliefs of blockchain based economies is the ability to have 100% control of one’s funds. This is quite the opposite of our current status, where the majority of the money supply is kept in banks and lent out to create profit. Because of this act of lending, many often regard banks as evil, or institutions that put people into debt. However, saying so without understanding our current financial system and the role of banks there wouldn’t make much sense. Understanding this complicated system could also help give insights to building future blockchain based economies. As such, in this two part series I would like to give an short explanation on what banks do, why removing banks are not that simple, and how the monetary system can be altered to preserve one’s rights to their assets without causing inefficiencies in the economy.

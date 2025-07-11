@@ -1,10 +1,10 @@
 +++
-date = '2025-07-11T00:00:00+00:00'
-draft = true
-title = 'Money ≡ Identity: Liquidity, Velocity, and Credit in One Equation'
+title = "Money ≡ Identity: Liquidity, Velocity, and Credit in One Equation"
+date = "2025-07-11T00:00:00+00:00"
+tags = []
 +++
 
-# Money ≡ Identity: Liquidity, Velocity, and Credit in One Equation
+# Money ≡ Identity: liquidity, velocity, and credit in one equation
 
 What is money? We propose a concise, (highly) ideal-form answer for theory curious readers who prefer elegance over footnotes. After centuries of circular definitions, the solution reduces to one algebraic sentence: Money equals the market's identity operator, filmed in time-lapse.
 

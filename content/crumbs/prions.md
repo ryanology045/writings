@@ -1,8 +1,10 @@
 +++
-title = "Prions And Viral Vectors Will Be Skynet's Weapon Of Choice"
+title = "A Prion-Virus: We may not be Prepared"
 date = "2025-06-25T00:00:00+00:00"
 tags = []
 +++
+
+# A Prion-Virus: we may not be prepared
 
 **_Note: this writing is to flag a biosecurity concern of potentially high severity - many details and citations have intentionally been left out to not be a document of inspiration._**
 

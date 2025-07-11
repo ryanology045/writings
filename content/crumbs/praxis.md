@@ -4,6 +4,8 @@ date = "2025-06-26T00:00:00+00:00"
 tags = []
 +++
 
+# PRAXIS - a maximally GPU-optimized digital organoid
+
 With the recent uptick in neuromorphic computing and increasing demand for recurrence and statefulness in LLMs, brain-inspired computing architectures are gaining renewed interest. Yet the field faces a fundamental dilemma: how do we reconcile biological realism with the constraints of modern computing hardware? 
 
 The neuromorphic computing community has largely bet on custom silicon - spending billions to design and manufacture specialized chips that can efficiently handle spike-based, asynchronous neural networks. But this approach overlooks a critical opportunity: what if algorithmic modifications could achieve brain-like computing capabilities using the massive GPU infrastructure already deployed for deep learning? 

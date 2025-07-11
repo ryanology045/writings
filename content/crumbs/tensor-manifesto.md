@@ -1,8 +1,10 @@
 +++
-title = "The Tensor Capitalism Manifesto: We Should Run Our Economies Like LLMs"
+title = "The Tensor Capitalism Manifesto: We should run our Economies Like LLMs"
 date = "2025-07-10T00:00:00+00:00"
 tags = []
 +++
+
+# The tensor capitalism manifesto: we should run our economies like LLMs
 
 Modern AI process language using thousands of dimensions. Every word gets embedded as a vector where `(king) - (man) + (woman) = (queen)`. The model would produce gibberish if forced to compress everything to single numbers.
 

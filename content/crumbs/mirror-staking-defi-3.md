@@ -4,6 +4,8 @@ date = "2019-09-28T00:00:01+00:00"
 tags = []
 +++
 
+# [Mirror] Staking and DeFi: can they coexist? Part 3
+
 > **NOTE: This is just a mirror of my old writing from 2019 for record-keeping purposes.**
 
 ### IMPORTANT: EVERETT IS NOT BEING WORKED ON SINCE 2020. THE CURRENT WHATEVER-THAT-IS YOU SEE ON https://everett.zone/ IS A SCAM AND NOT AFFILIATED WITH ANY OF THE PRIOR EVERETT PEOPLE - THEY ARE JUST COPYING THE EXACT SAME LOGO AND DOMAIN WE USED BACK IN 2019. 

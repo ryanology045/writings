@@ -4,6 +4,8 @@ date = "2025-06-24T00:00:00+00:00"
 tags = []
 +++
 
+# PRA - a new reasoning framework
+
 Understanding how one's mind can reason, and how it should reason are fundamental in developing capabilities for deep thinking and insight gathering. This applies heavily to human minds, and recently is also of exponential importance with the advancement of reasoning AI models. However, I've always felt traditional philosophical frameworks to be quite lacking - they either typically excel at one or the other: formal logic provides rigorous inference rules but treats values as static axioms, while process philosophies embrace change but often sacrifice systematic clarity. 
 
 I have thus decided to put in the effort to formalize my personal framework of reasoning into a writing (thanks to AI-accelerated writing). The framework touches upon many philosophical concepts and takes some inspiration from them, but do note that most of it was self-derived and thus the final framework may seem quite unconventional to readers. 

@@ -1,7 +1,9 @@
 +++
-title = "Blockchains Are Inevitable"
+title = "Blockchains are Inevitable"
 date = "2025-06-23T00:00:00+00:00"
 +++
+
+# Blockchains are inevitable
 
 For builders deep in blockchain work, it's a frequent occurrence - usually when deep in their career or in times of burnout - to question whether their work even has any meaning at all: something along the lines of "ok, blockchains / crypto / cryptography / new mechanisms / blockchain-native apps are cool and all and I find them very interesting, but what am I really doing here? Does trustlessness / open systems even matter at all? Do regular people even care? Am I even creating value to society?". 
 

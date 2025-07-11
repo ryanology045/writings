@@ -4,6 +4,8 @@ date = "2018-08-22T00:00:00+00:00"
 tags = []
 +++
 
+# [Mirror] A dictator’s guide to ruling
+
 > **NOTE: This is just a mirror of my old writing from 2018 for record-keeping purposes. 1) My current self does not consider this writing to carry useful insights, 2) I may no longer agree / believe with some of the details here, and 3) this is just poorly written.** 
 
 Nobody can rule alone. No matter how skilled you are, you can’t pave the road, operate businesses, and run the military all by yourself. Because of this simple axiom, the person in power has to rely on other people to do these jobs for you. And from this, the ruler has an incentive to keep those working below him happy. Not following this rule will lead to people below you replacing you with someone that’ll make them keep more rewards than you. Your work as a successful ruler is to redistribute your nation’s wealth and keep people happy enough so that they won’t overthrow you.
